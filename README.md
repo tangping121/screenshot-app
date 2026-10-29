@@ -50,7 +50,7 @@ dotnet publish 截图录像.csproj -c Release -r win-x64 --self-contained true -
 
 ## 安装包
 
-安装程序发布在 [Releases](https://github.com/tangping121/screenshot-app/releases)，下载 `截图录像安装程序.exe` 后双击安装。不需要管理员权限。
+安装程序发布在 [Releases](https://github.com/tangping121/screenshot-app/releases/tag/v1.0.0)，下载 [screenshot-setup.exe](https://github.com/tangping121/screenshot-app/releases/download/v1.0.0/screenshot-setup.exe) 后双击安装。不需要管理员权限。
 
 重新打包需要先按上面的命令发布到 `publish`，并安装 [Inno Setup 6](https://jrsoftware.org/isdl.php)，然后执行：
 
