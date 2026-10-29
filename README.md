@@ -47,3 +47,15 @@ dotnet publish 截图录像.csproj -c Release -r win-x64 --self-contained true -
 ```
 
 运行 `publish\截图录像.exe`。
+
+## 安装包
+
+安装程序发布在 [Releases](https://github.com/tangping121/screenshot-app/releases)，下载 `截图录像安装程序.exe` 后双击安装。不需要管理员权限。
+
+重新打包需要先按上面的命令发布到 `publish`，并安装 [Inno Setup 6](https://jrsoftware.org/isdl.php)，然后执行：
+
+```powershell
+& "$env:LOCALAPPDATA\Programs\Inno Setup 6\ISCC.exe" installer\截图录像.iss
+```
+
+生成的安装包在 `installer\output\截图录像安装程序.exe`。这个文件不放进 Git 仓库，避免把几十兆的程序写进提交历史。
