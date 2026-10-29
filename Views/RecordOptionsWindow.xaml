@@ -1,0 +1,18 @@
+<Window x:Class="ScreenshotApp.Views.RecordOptionsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:ScreenshotApp.Views"
+        Title="录像选项"
+        SizeToContent="WidthAndHeight"
+        WindowStartupLocation="CenterOwner"
+        ResizeMode="NoResize"
+        Background="#F8FAFC">
+  <StackPanel Margin="18">
+    <TextBlock Text="开始录像前可以改这一次的设置。" Margin="0,0,0,12" Foreground="#475569"/>
+    <local:RecordOptionsBar x:Name="Options"/>
+    <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,16,0,0">
+      <Button Content="开始录像" Style="{StaticResource PrimaryButton}" IsDefault="True" Click="Start_Click"/>
+      <Button Content="取消" IsCancel="True" Margin="0"/>
+    </StackPanel>
+  </StackPanel>
+</Window>

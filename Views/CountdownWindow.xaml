@@ -1,0 +1,20 @@
+<Window x:Class="ScreenshotApp.Views.CountdownWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        AllowsTransparency="True"
+        Background="Transparent"
+        Topmost="True"
+        ShowInTaskbar="False"
+        ShowActivated="False"
+        IsHitTestVisible="False"
+        Width="220" Height="220"
+        WindowStartupLocation="Manual">
+  <TextBlock x:Name="NumberText" Text="3" FontSize="140" FontWeight="Bold" Foreground="White"
+             HorizontalAlignment="Center" VerticalAlignment="Center">
+    <TextBlock.Effect>
+      <DropShadowEffect BlurRadius="16" ShadowDepth="0" Color="Black" Opacity="0.8"/>
+    </TextBlock.Effect>
+  </TextBlock>
+</Window>
